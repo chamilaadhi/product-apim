@@ -25,6 +25,7 @@
         <groupId>org.wso2</groupId>
         <artifactId>wso2</artifactId>
         <version>1</version>
+        <relativePath>../wso2-1.xml</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -57,9 +58,9 @@
     </modules>
 
     <scm>
-        <url>https://github.com/wso2/product-apim.git</url>
-        <developerConnection>scm:git:https://github.com/wso2/product-apim.git</developerConnection>
-        <connection>scm:git:https://github.com/wso2/product-apim.git</connection>
+        <url>https://github.com/chamilaadhi/product-apim.git</url>
+        <developerConnection>scm:git:https://github.com/chamilaadhi/product-apim.git</developerConnection>
+        <connection>scm:git:https://github.com/chamilaadhi/product-apim.git</connection>
         <tag>HEAD</tag>
     </scm>
 
@@ -875,7 +876,7 @@
     <properties>
 
         <!-- APIM Component Version -->
-        <carbon.apimgt.version>5.0.1-SNAPSHOT</carbon.apimgt.version>
+        <carbon.apimgt.version>5.0.0</carbon.apimgt.version>
         <carbon.apimgt.imp.pkg.version>[5.0.0, 6.0.0)</carbon.apimgt.imp.pkg.version>
 
         <!-- Carbon Registry -->
