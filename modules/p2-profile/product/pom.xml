@@ -1038,10 +1038,10 @@
                                     <id>org.wso2.carbon.metrics.feature.group</id>
                                     <version>${carbon.metrics.version}</version>
                                 </feature>
-			<!--	<feature>
+				<feature>
                                     <id>org.wso2.carbon.identity.user.profile.feature.group</id>
                                     <version>${carbon.identity.version}</version>
-                                </feature>-->
+                                </feature>
                             </features>
                         </configuration>
                     </execution>
