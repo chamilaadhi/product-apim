@@ -280,7 +280,7 @@
                             <goal>replace</goal>
                         </goals>
                         <configuration>
-                            <file>${basedir}/../../p2-profile/product/target/wso2carbon-core-${carbon.platform.version}/repository/conf/identity/identity.xml</file>
+                            <file>${basedir}/../../p2-profile/target/wso2carbon-core-${carbon.platform.version}/repository/conf/identity/identity.xml</file>
                             <replacements>
                                 <replacement>
                                     <xpath>/Server/JDBCPersistenceManager/DataSource/Name</xpath>
@@ -329,7 +329,7 @@
                             <goal>replace</goal>
                         </goals>
                         <configuration>
-                            <file>${basedir}/../../p2-profile/product/target/wso2carbon-core-${carbon.platform.version}/repository/conf/identity/thrift-authentication.xml</file>
+                            <file>${basedir}/../../p2-profile/target/wso2carbon-core-${carbon.platform.version}/repository/conf/identity/thrift-authentication.xml</file>
                             <replacements>
                                 <replacement>
                                     <xpath>/Server/JDBCPersistenceManager/DataSource/Name</xpath>
@@ -358,8 +358,8 @@
 			    <failOnMissingXpath>false</failOnMissingXpath>
                             <transformations>
                                    <transformation>    
-                                        <input>${basedir}/../../p2-profile/product/target/wso2carbon-core-${carbon.platform.version}/repository/conf/identity/identity.xml</input>
-					<output>../../../p2-profile/product/target/wso2carbon-core-${carbon.platform.version}/repository/conf/identity/identity.xml</output>
+                                        <input>${basedir}/../../p2-profile/target/wso2carbon-core-${carbon.platform.version}/repository/conf/identity/identity.xml</input>
+					<output>../../../p2-profile/target/wso2carbon-core-${carbon.platform.version}/repository/conf/identity/identity.xml</output>
                                         <config>identity_config_change.xml</config>
                                     </transformation>
 			    </transformations>
