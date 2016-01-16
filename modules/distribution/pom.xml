@@ -46,7 +46,7 @@
         <module>product</module>
     </modules>
 
-    <build>
+   <!-- <build>
         <plugins>
             <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
@@ -62,5 +62,5 @@
             </plugin>
 
         </plugins>
-    </build>
+    </build>-->
 </project>
