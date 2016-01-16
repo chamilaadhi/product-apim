@@ -24,7 +24,7 @@ under the License.
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>ArtifactDeploymentMonitor</groupId>
+
     <artifactId>ArtifactDeploymentMonitor</artifactId>
     <name>WSO2 API Manager - ArtifactDeploymentMonitor WebApp</name>
     <packaging>war</packaging>
