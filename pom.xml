@@ -33,6 +33,7 @@
         <groupId>org.wso2</groupId>
         <artifactId>wso2</artifactId>
         <version>1</version>
+        <relativePath>../wso2-1.xml</relativePath>
     </parent>
 
     <licenses>
@@ -43,21 +44,21 @@
     </licenses>
 
     <modules>
-        <module>modules/styles</module>
+        <!--<module>modules/styles</module>
         <module>modules/org.wso2.am.multitenancy.dashboard.ui</module>
         <module>modules/org.wso2.stratos.apimgt.dashboard.ui</module>
         <module>modules/org.wso2.stratos.apimgt.login.ui</module>
         <module>modules/features</module>
         <module>modules/p2-profile</module>
-        <module>modules/distribution</module>
+        <module>modules/distribution</module>-->
         <module>modules/api-import-export</module>
-        <module>modules/integration</module>
+        <!--<module>modules/integration</module>-->
     </modules>
 
     <scm>
-        <url>https://github.com/wso2/product-apim.git</url>
-        <developerConnection>scm:git:https://github.com/wso2/product-apim.git</developerConnection>
-        <connection>scm:git:https://github.com/wso2/product-apim.git</connection>
+        <url>https://github.com/chamilaadhi/product-apim.git</url>
+        <developerConnection>scm:git:https://github.com/chamilaadhi/product-apim.git</developerConnection>
+        <connection>scm:git:https://github.com/chamilaadhi/product-apim.git</connection>
         <tag>HEAD</tag>
     </scm>
 
