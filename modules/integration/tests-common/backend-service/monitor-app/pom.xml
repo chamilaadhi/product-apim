@@ -44,10 +44,17 @@ under the License.
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.cxf.wso2</groupId>
-            <artifactId>cxf-bundle</artifactId>
-            <scope>provided</scope>
+	    <groupId>org.apache.cxf</groupId>
+	    <artifactId>cxf-core</artifactId>
         </dependency>
+	<dependency>
+	    <groupId>org.apache.cxf</groupId>
+	    <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+	</dependency>
+	<dependency>
+    	    <groupId>org.apache.cxf</groupId>
+    	    <artifactId>cxf-rt-transports-http</artifactId>
+	</dependency>
         <dependency>
             <groupId>org.wso2.carbon</groupId>
             <artifactId>org.wso2.carbon.logging</artifactId>

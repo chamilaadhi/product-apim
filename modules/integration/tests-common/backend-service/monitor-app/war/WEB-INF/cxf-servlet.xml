@@ -29,6 +29,9 @@
             <ref bean="apiStatusMonitor"/>
             <ref bean="webAppStatusMonitor"/>
         </jaxrs:serviceBeans>
+        <jaxrs:providers>
+            <bean class="org.codehaus.jackson.jaxrs.JacksonJsonProvider" />
+        </jaxrs:providers>
     </jaxrs:server>
 
     <bean id="apiStatusMonitor"
