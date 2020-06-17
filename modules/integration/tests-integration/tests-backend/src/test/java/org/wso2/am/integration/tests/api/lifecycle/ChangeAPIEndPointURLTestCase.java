@@ -126,6 +126,7 @@ public class ChangeAPIEndPointURLTestCase extends APIManagerLifecycleBaseTest {
     @Test(groups = {"wso2.am"}, description = "Test the invocation of API using new end point URL" +
             "  after end point URL  change", dependsOnMethods = "testEditEndPointURL")
     public void testInvokeAPIAfterChangeAPIEndPointURLWithNewEndPointURL() throws Exception {
+        Thread.sleep(10000);
         HttpResponse oldVersionInvokeResponse =
                 HttpRequestUtil.doGet(getAPIInvocationURLHttp(INVOKABLE_API_CONTEXT),
                         requestHeaders);

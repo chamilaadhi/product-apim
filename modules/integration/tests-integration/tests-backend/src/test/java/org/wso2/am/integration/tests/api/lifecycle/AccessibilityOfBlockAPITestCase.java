@@ -99,7 +99,7 @@ public class AccessibilityOfBlockAPITestCase extends APIManagerLifecycleBaseTest
         requestHeaders.put("accept", "text/xml");
         requestHeaders.put("Authorization", "Bearer " + accessToken);
         waitForAPIDeploymentSync(user.getUserName(), API_NAME, API_VERSION_1_0_0, APIMIntegrationConstants.IS_API_EXISTS);
-
+Thread.sleep(10000);
         //Invoke  old version
         HttpResponse oldVersionInvokeResponse =
                 HttpRequestUtil.doGet(getAPIInvocationURLHttp(API_CONTEXT,
@@ -127,7 +127,7 @@ public class AccessibilityOfBlockAPITestCase extends APIManagerLifecycleBaseTest
             dependsOnMethods = "testChangeAPILifecycleToBlock")
     public void testInvokeAPIAfterChangeAPILifecycleToBlock() throws Exception {
         waitForAPIDeployment();
-
+        Thread.sleep(10000);
         //Invoke  old version
         HttpResponse oldVersionInvokeResponse =
                 HttpRequestUtil.doGet(getAPIInvocationURLHttp(API_CONTEXT, API_VERSION_1_0_0) + API_END_POINT_METHOD,

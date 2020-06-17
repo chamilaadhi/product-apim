@@ -100,7 +100,7 @@ public class AccessibilityOfRetireAPITestCase extends APIManagerLifecycleBaseTes
 
     @Test(groups = {"wso2.am"}, description = "Test invocation of the APi before retire")
     public void testInvokeAPIBeforeChangeAPILifecycleToRetired() throws Exception {
-
+Thread.sleep(10000);
         HttpResponse oldVersionInvokeResponse =
                 HttpRequestUtil.doGet(getAPIInvocationURLHttps(API_CONTEXT, API_VERSION_1_0_0) +
                         API_END_POINT_METHOD, requestHeaders);
@@ -157,7 +157,7 @@ public class AccessibilityOfRetireAPITestCase extends APIManagerLifecycleBaseTes
         //Invoke  old version
         waitForAPIDeploymentSync(user.getUserName(), API_NAME, API_VERSION_1_0_0,
                 APIMIntegrationConstants.IS_API_NOT_EXISTS);
-
+        Thread.sleep(10000);
         HttpResponse oldVersionInvokeResponse =
                 HttpRequestUtil.doGet(getAPIInvocationURLHttps(API_CONTEXT, API_VERSION_1_0_0) +
                         API_END_POINT_METHOD, requestHeaders);

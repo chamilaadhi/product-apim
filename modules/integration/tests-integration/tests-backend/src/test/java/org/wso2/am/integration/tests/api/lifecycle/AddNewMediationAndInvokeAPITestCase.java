@@ -93,7 +93,7 @@ public class AddNewMediationAndInvokeAPITestCase extends APIManagerLifecycleBase
         ApplicationKeyDTO applicationKeyDTO = restAPIStore.generateKeys(applicationId, "3600", null,
                 ApplicationKeyGenerateRequestDTO.KeyTypeEnum.PRODUCTION, null, grantTypes);
         accessToken = applicationKeyDTO.getToken().getAccessToken();
-
+        Thread.sleep(10000);
         HttpClient client = HttpClientBuilder.create().setHostnameVerifier(new AllowAllHostnameVerifier()).build();
         HttpGet request = new HttpGet(getAPIInvocationURLHttp(API_CONTEXT, API_VERSION_1_0_0));
         request.setHeader("Authorization", "Bearer " + accessToken);
@@ -123,6 +123,7 @@ public class AddNewMediationAndInvokeAPITestCase extends APIManagerLifecycleBase
         restAPIPublisher.updateAPI(apidto);
 
         waitForAPIDeployment();
+        Thread.sleep(10000);
         HttpClient client = HttpClientBuilder.create().setHostnameVerifier(new AllowAllHostnameVerifier()).build();
         HttpGet request = new HttpGet(getAPIInvocationURLHttp(API_CONTEXT, API_VERSION_1_0_0));
         request.setHeader("Authorization", "Bearer " + accessToken);
@@ -147,6 +148,7 @@ public class AddNewMediationAndInvokeAPITestCase extends APIManagerLifecycleBase
 
         waitForAPIDeployment();
         //Send GET Request
+        Thread.sleep(10000);
         HttpClient client = HttpClientBuilder.create().setHostnameVerifier(new AllowAllHostnameVerifier()).build();
         HttpGet request = new HttpGet(getAPIInvocationURLHttp(API_CONTEXT, API_VERSION_1_0_0));
         request.setHeader("Authorization", "Bearer " + accessToken);

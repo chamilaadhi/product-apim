@@ -150,6 +150,7 @@ public class AccessibilityOfOldAPIAndCopyAPIWithOutReSubscriptionTestCase extend
         requestHeaders = new HashMap<String, String>();
         requestHeaders.put("accept", "text/xml");
         requestHeaders.put("Authorization", "Bearer " + applicationKeyDTO.getToken().getAccessToken());
+        Thread.sleep(10000);
         HttpResponse oldVersionInvokeResponse =
                 HttpRequestUtil.doGet(getAPIInvocationURLHttps(API_CONTEXT, API_VERSION_2_0_0) +
                         API_END_POINT_METHOD, requestHeaders);

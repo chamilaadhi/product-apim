@@ -120,7 +120,7 @@ import static org.testng.Assert.assertTrue;
         ApplicationKeyDTO applicationKeyDTO = restAPIStore
                 .generateKeys(applicarionId, "3600", "", ApplicationKeyGenerateRequestDTO.KeyTypeEnum.PRODUCTION, null,
                         grantTypes);
-
+        Thread.sleep(10000);
         requestHeaders = new HashMap<String, String>();
         requestHeaders.put("Authorization", "Bearer " + applicationKeyDTO.getToken().getAccessToken());
         //Send GET request

@@ -88,7 +88,7 @@ public class AddEditRemoveRESTResourceTestCase extends APIManagerLifecycleBaseTe
         requestHeadersGet.put("Authorization", "Bearer " + accessToken);
         requestHeadersPost.put("Authorization", "Bearer " + accessToken);
         //Send GET Request
-
+        Thread.sleep(10000);
         HttpResponse httpResponse =
                 HttpRequestUtil.doGet(getAPIInvocationURLHttp(INVOKABLE_API_CONTEXT) + API_GET_ENDPOINT_METHOD,
                         requestHeadersGet);
@@ -144,7 +144,7 @@ public class AddEditRemoveRESTResourceTestCase extends APIManagerLifecycleBaseTe
         assertTrue(StringUtils.isNotEmpty(updateReponse.getId()), "Update APi with new Resource information fail");
         //Send GET Request
         waitForAPIDeployment();
-
+Thread.sleep(10000);
         HttpResponse httpResponseGet =
                 HttpRequestUtil.doGet(getAPIInvocationURLHttp(INVOKABLE_API_CONTEXT) + API_GET_ENDPOINT_METHOD,
                         requestHeadersGet);
@@ -168,7 +168,7 @@ public class AddEditRemoveRESTResourceTestCase extends APIManagerLifecycleBaseTe
     @Test(groups = {"webapp"}, description = "Test the invocation of POST and GET resource, after adding a URL pattern",
             dependsOnMethods = "testInvokePOSTAndGETResourceAfterAddingPOSTResource")
     public void testInvokePOSTAndGetResourceAfterAddingURLPattern() throws Exception {
-
+        Thread.sleep(10000);
         //Send GET Request
         HttpResponse httpResponseGet =
                 HttpRequestUtil.doGet(getAPIInvocationURLHttp(INVOKABLE_API_CONTEXT) +
